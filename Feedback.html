@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Feedback.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="WorldWondersGuide Logo.png" alt="" width="80px">WorldWondersGuide<span>.</span></a>
+        <nav class="navbar">
+        <ul>
+            <li><a data-scroll="home" href="WorldWondersGuide.html" class="active">Home</a></li>
+            <li><a data-scroll="about" href="About Us.html">About</a></li>
+            <li><a data-scroll="monuments" href="Monuments.html">Monuments</a></li>
+            <li><a data-scroll="gallery" href="Gallery.html">Gallery</a></li>
+            <li><a data-scroll="contact" href="#footer">contact Us</a></li>
+            <li><a data-scroll="Feedback" href="Feedback.html">Feedback</a></li>
+        </ul>
+        </nav>
+    </header>
+    <section class="home" id="feedback">
+        <div class="video">
+        <video autoplay loop muted plays-inline>
+            <source src="VideoEditor_The 7 Wonders of the World 4K (2).mp4  " type="video/mp4">
+        </video>
+        </div>
+        <div id="box">
+            <div>
+                <img src="WorldWondersGuide Logo.png" alt="">
+            </div>
+        <div class="content">
+            <h1><span class="span">F</span>EED<span class="span">B</span>ACK</h1>
+            <div class="form-container">
+                <form action="">
+                    <h3>Is this site helpful for you?</h3>
+                    <label for="name">Your Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" placeholder="Enter your e-mail" required><br><br>
+                    <textarea name="Feedback" id="" placeholder="Comments"></textarea>
+                    <button onclick="myFunction()" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script>
+    function myFunction() {
+  alert("Your Feedback is Submitted");
+}       
+    </script>
+    <footer>
+        <section id="footer">
+            <img src="WorldWondersGuide Logo.png" alt="" width="25%" style="margin-left: 7vh;">
+            <div style="width: 32%; margin-left: 7vh;">
+                <h2 style="font-size: 25px;">About Us</h2>
+                    <p style="font-size: 3vh;">At world wonders guide, we are dedicated to preserving memories through beautifully crafted monuments and memorials. With over 2 years of experience, We understand that creating a monument is not just about ; it's about offering a lasting symbol of respect, love, and remembrance. </p>
+            </div>
+            <div style="width: 30%; margin-left: 3vh;">
+                <h2 style="font-size: 25px;">Contact Us</h2>
+                <p style="font-size: 3vh;">E-mail:WWG@gmail.com</p>
+                <p style="font-size: 3vh;">Phone:021-XXXXXXXX</p>  
+            </div>
+            <div>
+                <p>© All Rights Reserved</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
