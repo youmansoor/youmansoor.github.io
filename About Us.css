@@ -1,0 +1,127 @@
+body {
+    font-family: 'Crimson', serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: #000;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a58a32;
+}
+html{
+    overflow-x: hidden;
+    font-size: 60.5%;
+}
+.heading{
+    color: #333;
+    font-size: 3.5rem;
+    padding: 1rem;
+    padding-top: 6rem;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+.heading span{
+    color: #0098a1;
+}
+header{
+    width: 100%;
+    background: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+}
+.header-active{
+    top: 0;
+    width: 100%;
+    border-radius: 0;
+}
+header .logo{
+    color: #a58a32;
+    font-size: 3rem;
+}
+header .logo span{
+    color: #a58a32;
+}
+header .navbar ul{
+    font-size: 5vh;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+header .navbar ul li{
+    margin: 8px;
+}
+header .navbar ul li a{
+    font-size: 2rem;
+    color: #a58a32;
+    transition: .2s linear;
+}
+header .navbar ul li .active{
+    color: #a58a32;
+}
+header .navbar ul li a:hover{
+    padding: 1vh;
+    color: #000;
+    background-color: #fff;
+    opacity: 1;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: #0098a1;
+    cursor: pointer;
+    display: none;
+}
+#About{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+#dis{
+    width: 100%;
+    margin-top: -42px;
+}
+.p{
+    padding: 25px;
+}
+#port{
+    width: 80%;
+    height: 220px;
+    margin-left: 100px;
+    justify-content: center;
+    border: 1px solid black;
+}
+.port{
+    width: 100%;
+    display: flex;
+}
+.dis {
+    text-align: left;
+}
+.span{
+    color: #a58a32;
+}
+#footer {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+} 
