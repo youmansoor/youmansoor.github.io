@@ -3,97 +3,590 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameVault</title>
-    <style>
-        body {
-            margin: 0px;
-            background-image: url(Bubble\ background\ 2.jpg);
-        }
-        header {
-            position: fixed;
-            margin: 0px;
-        }
-        input {
-            float: right;
-            margin-top: -60px;
-            margin-right:90px;
-            height: 40px;
-            width: 250px;
-            border: transparent;
-            border-radius: 10px;
-        }
-        button {
-            background-color: #2cf703;
-            color: #000;
-            width: 100px;
-            margin-top: -60px;
-            height: 40px;
-            float: right;
-            cursor: pointer;
-        }
-        nav {
-            background-color: #a8a8eb;
-            width: 100%;
-            height: 50px;
-            margin-top: 25px;
-        }
-        nav ul {
-            display: flex;
-            list-style-type: none;
-            padding: 10px;
-        }
-        nav ul li a {
-            text-align: center;
-            padding: 12px;
-            color: #000;
-            text-decoration: none;
-            font-size: 25px;
-        }
-        nav ul li a:hover {
-            background-color: #b6b0e9;
-        }
-        span {
-            color: #2cf703;
-            font-size: 40px;
-            text-decoration: underline;
-        }
-    </style>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>WorldWondersGuide</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Home page.css">
+    
 </head>
 <body>
-    <h1 style="color: #4f4fdb; margin-left: 30px; text-decoration: underline;"><i><Span>Game</Span></i>Vault</h1>
-    <div>
-        <input type="search" placeholder="search" list="opt">
-        <datalist id="opt">
-            <option value="#Action"><a href="">D:\Aptech Homework\HTML\brand Sell page.html</a></option>
-            <option value="#Simulation"></option>
-            <option value="#Puzzle"></option>
-            <option value="#Adventure"></option>
-            <option value="#Racing"></option>
-            <option value="#Role Playing"></option>
-            <option value="#Strategy"></option>
-            <option value="#Sports"></option>
-            <option value="#Card"></option>
-            <option value="#Board"></option>
-            <option value="#Educational"></option>
-            <option value="#Word"></option>
-        </datalist>
-        <button type="submit">Search</button>
-    </div>
-    <nav>
+    <header>
+        <a href="#" class="logo"><img src="WorldWondersGuide Logo.png" alt="" width="80px">WorldWondersGuide<span>.</span></a>
+        <nav class="navbar">
         <ul>
-            <li><a href="brand Sell page.html">Action</a></li>
-            <li><a href="#">Simulation</a></li>
-            <li><a href="#">Puzzle</a></li>
-            <li><a href="#">Adventure</a></li>
-            <li><a href="#">Racing</a></li>
-            <li><a href="#">Role Playing</a></li>
-            <li><a href="#">Strategy</a></li>
-            <li><a href="#">Sports</a></li>
-            <li><a href="#">Card</a></li>
-            <li><a href="#">Board</a></li>
-            <li><a href="#">Educational</a></li>
-            <li><a href="#">Word</a></li>
+            <li><a data-scroll="home" href="WorldWondersGuide.html" class="active">Home</a></li>
+            <li><a data-scroll="about" href="About Us.html">About</a></li>
+            <li><a data-scroll="monuments" href="Monuments.html">Monuments</a></li>
+            <li><a data-scroll="gallery" href="Gallery.html">Gallery</a></li>
+            <li><a data-scroll="contact" href="#footer">contact Us</a></li>
+            <li><a data-scroll="Feedback" href="Feedback.html">Feedback</a></li>
         </ul>
-    </nav>
+        </nav>
+    </header>
+    <div class="slider" id="home">
+        <figure>
+            <div class="slide">
+                <h1>Statue Of Liberty</h1>
+                <img src="800px-Statue_of_Liberty,_NY.jpg" alt="">
+            </div>
+            <div class="slide">
+                <h1>Monumento_ao_Cristo_Redentor</h1>
+                <img src="Monumento_ao_Cristo_Redentor.jpg" alt="">
+            </div>
+            <div class="slide">
+                <h1>Monument Dusk Jan</h1>
+                <img src="Washington_Monument_Dusk_Jan_2006.jpg" alt="">
+            </div>
+            <div class="slide">
+                <h1>Taj Mahal</h1>
+                <img src="taj mahal.jpg" alt="">
+            </div>
+        </figure>
+    </div>
+    <section class="feature" id="feature">
+        <h1 class="heading"><span>M</span>ONUMENTS <span>O</span>F <span>T</span>HE<span>W</span>ORLD</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2015/07/29/22/56/taj-mahal-866692_1280.jpg" alt="">
+                <div class="content">
+                    <h3 class="title">TAJ MAHAL AGRA </h3>
+                    <p> The Taj Mahal, located in Agra, India, is a UNESCO World Heritage site and a masterpiece of Mughal architecture. Built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal, it is made of white marble and features intricate carvings and symmetrical design. The monument is renowned for its beauty and is a symbol of eternal love.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out!</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.wIRKfP8CSNoGuIFh9FpfnAHaE8?rs=1&pid=ImgDetMain" alt="">
+                <div class="content">
+                    <h3 class="title">WALL OF CHINA</h3>
+                    <p>The Great Wall of China is one of the most remarkable architectural feats in history, stretching over 13,000 miles across northern China. Originally built during the 7th century BC, it was expanded and reinforced by various dynasties, particularly the Ming dynasty, to protect China from invasions by nomadic tribes. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.1-ShXNWTKA2EzD9UAYiDqgHaE8?rs=1&pid=ImgDetMain" alt="">
+                <div class="content">
+                    <h3 class="title">MACHU PICHUU PERU</h3>
+                    <p> Machu Picchu, an ancient Incan citadel in Peru, was built in the 15th century under Emperor Pachacuti. The site is known for its impressive dry-stone architecture and stunning mountain views. Rediscovered by Hiram Bingham in 1911, it is now a UNESCO World Heritage site. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://romecolosseumtickets.tours/wp-content/uploads/2022/05/milky-way-over-colosseum-rome.jpg" alt="">
+                <div class="content">
+                    <h3 class="title">COLOSSEUM </h3>
+                    <p>  The Colosseum, located in Rome, Italy, was built between 70-80 AD and could hold up to 50,000 spectators. It was used for gladiatorial contests, animal hunts, and public spectacles. Made of concrete and stone, the amphitheater is known for its iconic elliptical shape and arches. Today, it is a UNESCO World Heritage site and a major symbol of ancient Roman engineering and history.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/R.974d3d3ddecc92e2ea6c4a2b9992b327?rik=%2fK%2fPRuJdKlIasg&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0658%2f6097%2farticles%2fShopify.Disover.Thumbnail.Chichen.Itza_1024x1024.jpg%3fv%3d1576953514&ehk=xWW68B0Le9v7hgxqME7y0gPArGcFAQOPK%2bhVQOwcSYM%3d&risl=&pid=ImgRaw&r=0" alt="">
+                <div class="content">
+                    <h3 class="title">CHICHEN ITZA</h3>
+                    <p>Chichen Itza is an ancient Mayan city located in Mexico's Yucatán Peninsula, known for its iconic Pyramid of Kukulcán. Built between the 7th and 10th centuries, it was a major center for politics, economy, and religion.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i0.wp.com/leightontravels.com/wp-content/uploads/2023/06/The-sublime-Hagia-Sophia-Mosque.jpg?fit=1984%2C1532&ssl=1" alt="">
+                <div class="content">
+                    <h3 class="title">HAGIA SOPHIA</h3>
+                    <p>Hagia Sophia, built in 537 AD by Emperor Justinian I, was originally a Christian cathedral. After the Ottoman conquest in 1453, it became a mosque for nearly 500 years. In 1935, it was turned into a museum, symbolizing cultural heritage. In 2020, it was reconverted into a mosque, blending Byzantine and Ottoman histories. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/R.7d3135b5d1df06da021cbdfd4b345419?rik=RhshFFKCZsCPew&pid=ImgRaw&r=0" alt="">
+                <div class="content">
+                    <h3 class="title">PETRA </h3>
+                    <p>Petra, an ancient city in Jordan, was the capital of the Nabataean Kingdom around the 4th century BC. Known for its rock-cut architecture, it features iconic sites like the Treasury and elaborate tombs. The city flourished as a trade hub before being abandoned. Rediscovered in 1812, Petra is now a UNESCO World Heritage Site.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.mos.cms.futurecdn.net/XsbvTN6PRi6PZtgEGvRsiE.jpg" alt="">
+                <div class="content">
+                    <h3 class="title">STATUE OF LIBERTY</h3>
+                    <p>The Statue of Liberty, a gift from France to the U.S. in 1886, symbolizes freedom and democracy. Designed by Frédéric Auguste Bartholdi, it stands 305 feet tall in New York Harbor. Made of copper, it has turned green due to oxidation over time. The statue remains a powerful symbol of hope and liberty.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.stockcake.com/public/2/3/6/23600bb3-9672-4b60-90a0-dd29fa8019e6_large/eiffel-tower-night-stockcake.jpg" alt="">
+                <div class="content">
+                    <h3 class="title">EIFFLE TOWER </h3>
+                    <p>The Eiffel Tower, completed in 1889, was designed by Gustave Eiffel for the World's Fair. Standing 1,083 feet tall, it was the tallest structure in the world until 1930. Initially criticized, it has become an iconic symbol of Paris. Today, it attracts millions of visitors annually.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://img.pixers.pics/pho_wat(s3:700/FO/58/23/16/59/700_FO58231659_9a199aaf8345e147454e29eb44bd6108.jpg,454,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,234,650,jpg)/wall-murals-big-ben-clock-tower-and-house-of-parliament-in-london-at-night.jpg.jpg" alt="">
+                <div class="content">
+                    <h3 class="title">BIG BEN </h3>
+                    <p>Big Ben, located in London, is the Great Bell of the Elizabeth Tower at the Palace of Westminster. Completed in 1859, the tower stands 316 feet tall and is known for its accurate clock. The name "Big Ben" originally referred to the bell itself. It remains a symbol of British history and a major landmark.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://thenarrativematters.com/wp-content/uploads/2024/05/lincoln-memorial.jpg" alt="">
+                <div class="content">
+                    <h3 class="title">LINCOLN MEMORIAL</h3>
+                    <p>The Lincoln Memorial, completed in 1922, honors President Abraham Lincoln in Washington, D.C. Designed by Henry Bacon, it features a large seated statue of Lincoln. The memorial symbolizes unity and freedom, reflecting Lincoln’s leadership during the Civil War. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://thumbs.dreamstime.com/b/above-st-basil-cathedral-red-square-kremlin-panorama-moscow-russia-above-impressive-st-basil-cathedral-red-square-kremlin-266629583.jpg" alt="">
+                <div class="content">
+                    <h3 class="title">KREMLIN </h3>
+                    <p>The Kremlin, located in Moscow, is a historic fortified complex and the official residence of the Russian president. It dates back to the 2nd century and includes palaces, churches, and government buildings. The iconic red walls and towers symbolize Russian power. It is a UNESCO World Heritage site and a popular tourist destination.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.travelandleisure.com/thmb/0R-YHAXRZby3ykN68FAqU68Ivjk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ALHAMBRA0117-73e53148f36748aca96a22a093af8a82.jpg" alt="">
+                <div class="content">
+                    <h3 class="title">THE ALHAMBRA </h3>
+                    <p>The Alhambra, located in Granada, Spain, is a 13th-century palace and fortress complex built by the Moors. Known for its exquisite Islamic architecture, it features ornate courtyards and gardens. It served as the residence of Nasrid dynasty rulers. Today, it is a UNESCO World Heritage site and a popular tourist destination.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/14/07/fd/machu-picchu-at-sunrise.jpg?w=1200&h=1200&s=1" alt="">
+                <div class="content">
+                    <h3 class="title">HUYAYNA PICCHU PERU</h3>
+                    <p> Huyayna Machu Picchu, located in Peru, is a 15th-century Incan citadel built by Emperor Pachacuti. It was abandoned in the 16th century and rediscovered in 1911. Known for its impressive stonework, it features temples and terraces.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="sargada.jpg" alt="">
+                <div class="content">
+                    <h3 class="title">SAGRADA FAMILIA</h3>
+                    <p>The Sagrada Familia, located in Barcelona, Spain, is an unfinished basilica designed by Antoni Gaudí. Construction began in 1882 and is expected to be completed by 2026. It blends Gothic and Art Nouveau styles, featuring intricate facades and towers. The basilica is a UNESCO World Heritage site and a major tourist attraction.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Sydney.webp" alt="">
+               <div class="content">
+                    <h3 class="title">OPERA HOUSE</h3>
+                    <p>The Sydney Opera House, located in Australia, is a world-famous architectural marvel designed by Jørn Utzon. Completed in 1973, it is known for its distinctive sail-like roof structure. It hosts performances, including opera, theater, and music, attracting millions of visitors annually. Recognized as a UNESCO World Heritage Site, it symbolizes creativity and modern design.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Dubai-Burj-Khalifa-6.jpg" alt="">
+                <div class="content">
+                    <h3 class="title">BURJ KHALIFA</h3>
+                    <p>Burj Khalifa in Dubai, UAE, is the tallest building in the world at 828 meters. Completed in 2010, it showcases remarkable architecture and engineering. It includes residential spaces, offices, and observation decks with stunning views. The tower represents Dubai's growth and is a major tourist destination.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                </div>
+            </div>
+                    <div class="card">
+                        <img src="20171126_Angkor_Wat_4712_DxO.jpg" alt="">
+                        <div class="content">
+                            <h3 class="title">ANGKOR WAT</h3>
+                            <p>Angkor Wat in Cambodia is the largest religious monument in the world, built in the 12th century by the Khmer Empire. Originally dedicated to the Hindu god Vishnu, it later became a Buddhist temple. It is renowned for its stunning architecture, intricate carvings, and symbolic design representing Mount Meru. Today, it is a UNESCO World Heritage Site and a major tourist attraction. </p>
+                          <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <a href="#"><button class="btn">check out</button></a>
+                        </div>
+                        </div>
+                        <div class="card">
+                            <img src="VIP4.jpg" alt="">
+                           <div class="content">
+                                <h3 class="title">BLUE MOSQUE</h3>
+                                <p> The Blue Mosque, also known as the Sultan Ahmed Mosque, is a historic mosque in Istanbul, Turkey, built between 1609 and 1616. It is famous for its stunning blue tiles that adorn the interior and its six elegant minarets. The mosque combines Ottoman and Byzantine architectural styles, showcasing grandeur and beauty. It remains an active place of worship and a popular tourist attraction.</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                            </div>
+                                <a href="#"><button class="btn">check out</button></a>
+                            </div>
+                            </div>
+                            <div class="card">
+                                <img src="pantheon-roman-monument-444.jpg" alt="">
+                                <div class="content">
+                                    <h3 class="title">PANTHEON ROMAN</h3>
+                                   <p>The Pantheon in Rome, built around 113–125 AD, is an ancient Roman temple dedicated to all gods. It is famous for its massive dome, the largest unreinforced concrete dome in the world. The oculus at the center allows natural light inside, creating a unique effect.</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <a href="#"><button class="btn">check out</button></a>
+                                </div>
+                                </div>
+                                <div class="card">
+                                    <img src="1024px-Louvre_Pyramid.jpg" alt="">
+                                    <div class="content">
+                                        <h3 class="title">LOUVRE PYRAMID</h3>
+                                       <p>The Louvre Pyramid in Paris, France, is a glass and metal structure designed by architect I. M. Pei. Completed in 1989, it serves as the main entrance to the Louvre Museum. The pyramid is made of 673 glass panes and symbolizes modern architecture. It is a famous landmark and a major tourist attraction.</p>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <a href="#"><button class="btn">check out</button></a>
+                                    </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="STONE 1.jpg" alt="">
+                                        <div class="content">
+                                        <h3 class="title">STONEHENGE</h3>
+                                            <p>Stonehenge is a prehistoric monument in Wiltshire, England, built around 3000 BC to 2000 BC. It features massive standing stones arranged in a circular pattern, believed to serve religious or astronomical purposes. Its exact purpose remains a mystery, adding to its intrigue and historical significance.</p>
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <a href="#"><button class="btn">check out</button></a>
+                                        </div>
+                                        </div>
+                                        <div class="card">
+                                            <img src="1280px-Rano_Raraku_quarry.jpg" alt="">
+                                            <div class="content">
+                                                <h3 class="title">EASTER LAND</h3>
+                                                <p>Easter Island, located in the Pacific Ocean, is famous for its massive stone statues called Moai. These statues were carved by the Rapa Nui people between 1250 and 1500 AD. The island's mysterious history and unique culture attract researchers and tourists worldwide. It is a UNESCO World Heritage Site, preserving its rich archaeological and cultural significance. </p>
+                                               <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                    <a href="#"><button class="btn">check out</button></a>
+                                            </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="1280px-Sphinx_with_the_third_pyramid.jpg" alt="">
+                                                <div class="content">
+                                                    <h3 class="title">SPHINEX WITH THIRD PYRAMID</h3>
+                                                    <p>The Great Sphinx of Giza in Egypt is a massive statue with a lion's body and a pharaoh's head. It stands near the third pyramid, built for Pharaoh Menkaure. The Sphinx symbolizes strength and protection, guarding the pyramids. These ancient structures are iconic symbols of Egypt’s rich history and culture. </p>
+                                                    <div class="stars">
+                                                     <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                    </div>
+                                                    <a href="#"><button class="btn">check out</button></a>
+                                                </div>
+                                                </div>
+                                                <div class="card">
+                                                    <img src="The_Parthenon_in_Athens.jpg" alt="">
+                                                    <div class="content">
+                                                   <h3 class="title">PARTHEON</h3>
+                                                        <p>The Parthenon in Athens, Greece, is an ancient temple dedicated to the goddess Athena, built in 447–432 BC. It is renowned for its classical architecture and intricate sculptures, symbolizing Greek art and culture. The structure served as a treasury and later as a church and mosque. Today, it stands as a major archaeological site and a symbol of democracy and Western civilization.</p>
+                                                        <div class="stars">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                        </div>
+                                                        <a href="#"><button class="btn">check out</button></a>
+                                                    </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <img src="Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg" alt="">
+                                                        <div class="content">
+                                                            <h3 class="title">GREAT PYRAMID OF GIZA</h3>
+                                                    <p>The Pyramids of Giza in Egypt are ancient monuments built as tombs for the pharaohs over 4,500 years ago. The largest, the Great Pyramid, was constructed for Pharaoh Khufu and is one of the Seven Wonders of the Ancient World. These pyramids showcase remarkable engineering and align precisely with astronomical points. </p>
+                                                            <div class="stars">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                               <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star-half-alt"></i>
+                                                            </div>
+                                                            <a href="#"><button class="btn">check out</button></a>
+                                                        </div>
+                                                        </div>
+                                                        <div class="card">
+                                                            <img src="Notre-Dame_de_Paris,_4_October_2017.jpg" alt="">
+                                                            <div class="content">
+                                                                <h3 class="title">NOTRE DAME DE PARIS</h3>
+                                                           <p>Notre-Dame de Paris is a famous Gothic cathedral in Paris, France, built between 1163 and 1345. It is renowned for its stunning architecture, including flying buttresses, stained glass windows, and iconic towers. The cathedral is a symbol of French history and culture, attracting millions of visitors each year.</p>
+                                                                <div class="stars">
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star"></i>
+                                                                    <i class="fas fa-star-half-alt"></i>
+                                                                </div>
+                                                                <a href="#"><button class="btn">check out</button></a>
+                        </div>
+                      </div>
+                  </div>
+             </div>
+        </div>
+    </section>
+    <!-- <section>
+        <h1 style="margin-top: 100px; margin-bottom: 30px; font-size: 40px; text-decoration: underline;" id="monuments"><b>TOP 7 MOST POPULAR MONUMENTS OF THE WORLD</b></h1>
+        <h2 style="margin-top: 100px; font-size: 40px; text-decoration: underline;">MONUMENTS LOCATED IN EAST</h2>
+        <div id="Container">
+            <div class="box">
+                <img src="Colosseum italy.jpeg" alt="" class="img">
+                <h3 class="h3"><i>1)Colosseum.</i></h3>
+                <p style="margin: 10px; margin-left: 450px;" class="p">The Colosseum, also known as the Flavian Amphitheatre, is one of the most iconic landmarks in Italy and a symbol of ancient Roman engineering and architecture. Located in the heart of Rome, it was commissioned by Emperor Vespasian of the Flavian dynasty in AD 70–72 and completed by his son Titus in AD 80. The Colosseum was primarily used for gladiatorial contests, public spectacles such as animal hunts, mock naval battles, and executions. It could hold up to 80,000 spectators, making it the largest amphitheater in the Roman world. Its innovative design features a complex system of entrances, corridors, and seating arrangements, showcasing the Romans' advanced understanding of crowd management and architecture. Over the centuries, the Colosseum has suffered from earthquakes, stone robbing, and the ravages of time, but it remains a powerful reminder of ancient Roman culture and continues to draw millions of visitors annually. Today, it stands as a UNESCO World Heritage site and one of the New Seven Wonders of the World, celebrated not only for its historical significance but also for its role in shaping the entertainment industry.The Colosseum, also known as the Flavian Amphitheatre, is an iconic symbol of ancient Rome, located in the heart of the city. Completed in AD 80 under Emperor Titus, it was used for gladiatorial games, public spectacles, animal hunts, mock naval battles, executions,<details style="margin-left: 450px;"><summary id="btn">Read more!</summary> and other forms of entertainment. The amphitheater measures 189 meters in length, 156 meters in width, and stands 48 meters tall. With a seating capacity of 50,000 to 80,000, it hosted some of the most brutal and extravagant events of the Roman Empire. Built primarily of concrete, travertine, and tuff, its structure includes three levels of arches supported by columns in Doric, Ionic, and Corinthian styles. The arena was the stage for various spectacles, including gladiatorial combat and animal hunts, while the hypogeum beneath housed gladiators and animals before events. The upper levels were reserved for the general public, with the elite seated in the lower sections. Over the centuries, the Colosseum fell into disrepair due to earthquakes, looting, and the decline of the Roman Empire, but it remains a powerful symbol of Roman engineering and culture.and the grandeur of ancient spectacles. Today, it stands as a major historical and cultural symbol, attracting millions of visitors each year.</details></p>
+            </div>
+        <h2 style="margin-top: 200px; font-size: 30px; text-decoration: underline;">MONUMENTS LOCATED IN SOUTH</h2>
+            <div class="box">
+                <img src="Machu.jpeg" alt="" class="img">
+                <h3 class="h3"><i>2)Machu</i></h3>
+                <p style="margin: 10px; margin-left: 450px;" class="p">Machu Picchu, located in the Andes Mountains of Peru, is one of the most renowned archaeological sites in the world. Built by the Inca civilization in the 15th century, it is believed to have been a royal estate or religious retreat for the Inca emperor Pachacuti. The site consists of impressive stone structures, terraces, and stairways, all intricately designed to blend with the surrounding natural landscape. Rediscovered by American explorer Hiram Bingham in 1911, Machu Picchu is now a UNESCO World Heritage site and one of the most visited tourist destinations globally, offering stunning views and a glimpse into the ingenuity of Inca engineering.Machu Picchu is one of the most renowned and mysterious archaeological sites in the world, situated high in the Andes Mountains of Peru at an elevation of 2,430 meters (7,970 feet). Built by the Inca Empire in the mid-15th century, it is believed to have served as a royal estate, religious center, or possibly both. The site consists of a complex network of temples, palaces, residential buildings, and agricultural terraces, all constructed using finely cut stonework without mortar, showcasing the advanced engineering skills of the Incas. The exact purpose of Machu Picchu remains debated, but it is often associated with the Inca emperor Pachacuti and may have been a ceremonial site or a retreat for the elite. Though known to local indigenous people, it was not widely recognized by the outside world until American explorer Hiram Bingham brought it to international attention in 1911.<details style="margin-left: 450px;"><summary id="btn">Read more!</summary>Accessible today via the famous Inca Trail or by train from Cusco, Machu Picchu draws millions of visitors each year. As a UNESCO World Heritage Site, it holds great cultural and historical significance, symbolizing the Inca civilization’s remarkable achievements. The site’s isolation from the Spanish conquest has contributed to its preservation. Despite its popularity, Machu Picchu faces challenges from mass tourism, with ongoing efforts to protect and conserve the site amid concerns about environmental impact and erosion. The mystery of why it was abandoned remains a subject of intrigue, adding to its allure as one of the most captivating archaeological wonders in the world.</details></p>
+            </div>
+            <div class="box">
+                <img src="Monumento_ao_Cristo_Redentor.jpg" alt=""class="img">
+                <h3 class="h3"><i>3)Christ the Redeemer</i></h3>
+                <p style="margin: 10px; margin-left: 450px;" class="p">Christ the Redeemer is a towering statue of Jesus Christ, located atop Mount Corcovado in Rio de Janeiro, Brazil. Standing at 98 feet tall with arms stretching 92 feet wide, it is an imposing figure that symbolizes peace, faith, and the embrace of humanity. The statue, made of reinforced concrete and covered in soapstone, was completed in 1931 and has since become a global icon. Its serene, compassionate face and outstretched arms convey a welcoming gesture, symbolizing Christ's embrace of the world. Positioned on a pedestal with a panoramic view of the city, the statue is not only a religious symbol but also a representation of Brazilian culture and unity. At night, it is beautifully illuminated, offering a breathtaking sight against the backdrop of Rio's landscape. Christ the Redeemer is recognized as one of the New Seven Wonders of the World and remains a must-see landmark for visitors to Brazil.Christ the Redeemer is one of the most iconic monuments in the world, standing atop the 2,300-foot Mount Corcovado in Rio de Janeiro, Brazil. The statue, which reaches a height of 98 feet (30 meters), is an awe-inspiring depiction of Jesus Christ with his arms outstretched in a gesture of peace and acceptance. Designed by Brazilian engineer Heitor da Silva Costa and sculpted by French artist Paul Landowski, the monument was completed in 1931 after nearly a decade of work. Constructed from reinforced concrete and covered with soapstone, it is built to withstand the tropical climate. The statue sits on a pedestal that adds another 26 feet (8 meters) to its height, making it visible from various points across the city,<details style="margin-left: 450px;"><summary id="btn">Read more!</summary> including beaches and neighborhoods. The statue’s serene expression, gentle face, and expansive arms symbolize Christ’s universal love, welcoming people of all faiths and backgrounds. It has become a symbol not only of Christianity but of the spirit and hospitality of Brazil. As one of the New Seven Wonders of the World, Christ the Redeemer attracts millions of visitors each year and is a UNESCO World Heritage Site, drawing people for both its religious significance and its breathtaking views of Rio de Janeiro’s beaches, Sugarloaf Mountain, and lush surrounding forests. The statue is beautifully lit at night, offering a stunning sight against the starry sky.</details></p>
+            </div>
+            <div class="box">
+                <img src="Mexico.jpeg" alt="" class="img">
+                <h3 class="h3"><i>4)El Castillo</i></h3>
+                <p style="margin: 10px; margin-left: 450px;" class="p">El Castillo, also known as the Temple of Kukulkán, is the most recognizable structure at the ancient Maya city of Chichen Itza, located in Mexico’s Yucatán Peninsula. This extraordinary step pyramid, built between the 8th and 12th centuries, was dedicated to Kukulkán, the feathered serpent god revered by the Maya. The pyramid stands approximately 24 meters (79 feet) tall and features a series of nine terraces, each representing a layer of the Maya cosmos, particularly the nine levels of the underworld. The pyramid's design is a testament to the Maya's advanced knowledge of geometry, astronomy, and religious symbolism, making it an important structure not only architecturally but also spiritually.
+    
+                    The most striking feature of El Castillo is its alignment with the sun. The Maya were exceptional astronomers, and El Castillo serves as a functional observatory of sorts. During the spring and autumn equinoxes, when the sun is directly above the equator, a stunning visual effect occurs. As the sun sets, the shadow cast by the pyramid’s stairs forms a snake-like shape that appears to slither down the northern staircase. This shadow is interpreted as Kukulkán descending from the heavens to Earth. This phenomenon was not merely a visual effect but a deeply symbolic event that reflected the Maya’s belief in the cyclical nature of life, death, and rebirth, and their intimate connection with the natural world and the gods.
+                    
+                    The pyramid’s exact purpose, however, is still debated by archaeologists.<details style="margin-left: 450px;"><summary id="btn">Read more!</summary> El Castillo likely served as both a temple and a center for religious rituals and astronomical observations. It was not only a physical monument but also an important part of the Maya's spiritual and ceremonial practices. The temple at the top of the pyramid would have been used for offerings and ceremonies to honor Kukulkán, and it is believed that it also played a role in the city's political and social life. The layout of Chichen Itza, including the placement of El Castillo, shows careful planning and intentional alignment with celestial events, underscoring the Maya’s belief in the deep interconnectedness between the cosmos and earthly existence.
+                    
+                    In addition to its religious and astronomical significance, El Castillo was part of Chichen Itza's role as a major political and economic center. At its peak, Chichen Itza was one of the most powerful cities in the Maya world, and its strategic location allowed it to control trade routes across the region. The city itself was a hub of cultural and intellectual activity, with El Castillo standing as a symbol of the city's prestige and the Maya rulers’ divine authority. The pyramid, alongside other monumental structures at Chichen Itza, was also a venue for public gatherings, ceremonies, and possibly ball games, which held deep cultural and religious meaning for the Maya.
+                    
+                    Chichen Itza, and El Castillo in particular, fell into decline around the 10th century, possibly due to internal strife, environmental factors, or the shifting of trade routes. By the time the Spanish arrived in the 16th century, the city had already been abandoned, and much of its history was lost to time. Nonetheless, El Castillo and the rest of Chichen Itza remained largely intact and have been studied extensively by archaeologists, providing invaluable insights into the Maya civilization.
+                    
+                    In 1988, Chichen Itza, including El Castillo, was designated a UNESCO World Heritage Site, recognizing the site's cultural and historical importance. In 2007, it was also named one of the New Seven Wonders of the World. Today, the pyramid attracts millions of tourists annually, who visit to witness its architectural grandeur and to experience the awe-inspiring equinox phenomenon. Preservation efforts are ongoing to protect the site from the impact of mass tourism, which can damage the delicate structure.
+                    
+                    El Castillo, as a symbol of the Maya’s advanced understanding of the natural world, continues to be a focal point of interest for historians, archaeologists, and visitors alike. Its precise design and its connection to celestial events highlight the Maya's sophistication in fields like engineering, mathematics, and astronomy, and it remains a testament to the enduring legacy of this remarkable ancient civilization.</details></p>
+            </div>
+        <h2 style="margin-top: 200px; font-size: 30px; text-decoration: underline;">MONUMENTS LOCATED IN WEST</h2>
+            <div class="box">
+                <img src="Petra.jpeg" alt="" class="img">
+                <h3 class="h3"><i>5)Ad-Dayr</i></h3>
+                <p style="margin: 10px; margin-left: 450px;" class="p">Al-Dayr, also known as The Monastery, is one of the most remarkable and imposing structures in Petra, Jordan, carved into the rose-red sandstone cliffs of the Petra valley. The building was constructed during the 1st century BCE, likely at the height of the Nabataean Kingdom, and stands as a testament to the advanced engineering and artistic skills of the Nabataeans. The Monastery is larger than many other structures in Petra, measuring around 50 meters (164 feet) in width and 45 meters (148 feet) in height, and is distinguished by its grand facade. The structure features a central doorway flanked by columns and a pediment, much like the more famous Treasury (Al-Khazneh) in Petra, but on a much larger scale. The interior of the building is an open space, thought to have been used for religious ceremonies or gatherings, though its exact purpose remains a subject of debate among scholars. Some believe it was dedicated to a Nabataean god or royal figure, while others suggest it was a place of spiritual significance, possibly even for royal rituals.
+    
+                    The name "Al-Dayr," meaning "The Monastery" in Arabic, comes from the later Byzantine period when Christian monks are believed to have used the site. This connection to Christianity likely led to the structure being called a monastery, though it’s unclear if it had Christian origins. The exact function of the Monastery before this period remains a mystery, as the Nabataeans left few written records. The strategic location of Al-Dayr, situated in the upper reaches of Petra, requires visitors to undertake a challenging hike of over 800 steps to reach it,<details style="margin-left: 450px;"><summary id="btn">Read more!</summary> but the effort is rewarded with panoramic views of the surrounding mountains and desert landscape. This hike, coupled with the grandeur of the site itself, adds to the sense of awe and mystery that surrounds the Monastery.
+                    
+                    Al-Dayr, though not as widely known as the Treasury, is an important part of Petra’s rich historical and architectural legacy. Its scale and isolation give it an air of majesty and serenity, making it one of the most visited sites in Petra today. It reflects the advanced skills of the Nabataeans, who were master builders and engineers, capable of carving intricate structures directly into the rock. The Monastery's remote location also means that it is less crowded than other Petra sites, offering a more peaceful and immersive experience for visitors. The Monastery and Petra as a whole were designated a UNESCO World Heritage Site in 1985, due to the site’s unparalleled architectural beauty and historical significance. As part of one of the New Seven Wonders of the World, Al-Dayr continues to capture the imaginations of tourists, archaeologists, and historians alike, standing as a lasting monument to the cultural and architectural achievements of the Nabataeans.</details></p>
+            </div>
+        <h2 style="margin-top: 200px; font-size: 30px; text-decoration: underline;">MONUMENTS LOCATED IN NORTH</h2>
+            <div class="box">
+                <img src="wall of chin.jpeg" alt="" class="img">
+                <h3 class="h3"><i>6)Great Wall of China</i></h3>
+                <p style="margin: 10px; margin-left: 450px;" class="p">The Great Wall of China is an extraordinary and monumental structure that spans over 21,000 kilometers (13,100 miles) across northern China, making it one of the most ambitious and largest man-made constructions in history. Originally built to protect Chinese kingdoms and empires from nomadic invasions, it remains a powerful symbol of China's strength, perseverance, and engineering brilliance. The wall’s history dates back to the 7th century BCE during the Warring States period, but the most substantial construction occurred during the Ming Dynasty (1368–1644). The purpose of the Great Wall was not just defensive but also to control migration, enforce customs duties, and provide a physical boundary between different civilizations.
+    
+                    The construction of the wall was a complex and multifaceted project that spanned several dynasties, including the Qin, Han, and Ming Dynasties, with each contributing to its development. The wall was not a single continuous structure, but rather a series of walls, fortifications, and watchtowers, with many sections built in different styles and materials depending on the local geography. In the northern and western parts of China, where stone was scarce, sections of the wall were constructed using rammed earth or wood. In more accessible areas, stone and brick were used to build stronger, more durable fortifications. Watchtowers were placed at regular intervals, allowing soldiers to keep watch over vast areas, relay messages, and signal danger by fire or smoke.
+                    
+                    At its peak, the wall served several purposes: it was a military defense line, a communication network,<details style="margin-left: 450px;"><summary id="btn">Read more!</summary> a deterrent to invaders, and even a symbol of the emperor’s authority and the unity of China. The wall's role was particularly crucial during the Mongol invasions in the 13th century, led by Genghis Khan, and later during the Ming Dynasty, when the Mongols were driven out. The Ming constructed the most famous and recognizable sections of the wall, using stone and brick for improved fortifications and building impressive gates and military posts.
+                    
+                    The wall also facilitated trade, particularly along the ancient Silk Road. While it was primarily a defensive barrier, it also served as a way to regulate commerce and protect traders traveling from China to Central Asia and beyond. The Great Wall, therefore, not only protected the empire but also helped foster the exchange of goods, culture, and ideas between the East and West.
+                    
+                    Over time, the Great Wall began to lose its military significance. As the threat of invasion waned, parts of the wall fell into disrepair, and much of it was left abandoned or destroyed by natural erosion, war, and human activity. Despite this, the Great Wall remained a symbol of China’s cultural heritage and historical might, drawing both admiration and awe.
+                    
+                    Today, the Great Wall is one of the most visited tourist attractions in the world and a UNESCO World Heritage Site. Sections near Beijing, such as the Badaling and Mutianyu stretches, have been carefully restored and are open to tourists, offering a glimpse into the grandeur of the structure and its historical significance. These areas feature well-preserved walls, watchtowers, and scenic views of the surrounding mountains, attracting millions of visitors each year.
+                    
+                    However, large parts of the wall, especially those in remote areas, are in varying states of preservation. Some sections have suffered from erosion, neglect, and vandalism, while others are still relatively intact, offering a more authentic and rugged experience for adventurers and history enthusiasts. The Great Wall is not only a remarkable feat of engineering but also a cultural and historical symbol that reflects the endurance, ingenuity, and determination of the Chinese people. Its construction required immense human labor, with hundreds of thousands of workers—including soldiers, prisoners, and peasants—taking part in its building and maintenance over many centuries.
+                    
+                    The Great Wall’s legacy extends beyond its physical presence. It stands as a powerful reminder of China’s complex history, the hardships endured by its people, and the sophisticated methods of construction that allowed such a vast and enduring structure to be created. Today, it continues to inspire awe for its scale and historical significance, remaining one of the most enduring symbols of ancient China.</details></p>
+            </div>
+            <div class="box">
+                <img src="Taj-Mahal-Agra-India.webp" alt="" class="img">
+                <h3 class="h3"><i>7)Taj-Mahal-Agra</i></h3>
+                <p style="margin: 10px; margin-left: 450px;" class="p">The **Taj Mahal**, located in Agra, India, is not only one of the most renowned architectural marvels in the world but also an enduring symbol of love and artistic grandeur. Built between **1632 and 1653**, the Taj Mahal was commissioned by **Emperor Shah Jahan** in memory of his beloved wife, **Mumtaz Mahal**, who died in childbirth in 1631. Shah Jahan's profound grief over her death inspired him to construct this grand mausoleum, which would house her tomb and stand as a testament to their love. The Taj Mahal, meaning "Crown of the Palace," is considered the pinnacle of Mughal architecture, blending elements of **Persian**, **Ottoman**, and **Indian architectural styles** into a harmonious and breathtaking whole.
+    
+                    The main structure of the Taj Mahal is a white marble **mausoleum** with a large dome at its center, which rises approximately **35 meters (115 feet)** above the base. This dome, with its elegant proportions, is surrounded by four **minarets**, each standing over **40 meters (131 feet)** tall, giving the structure a sense of balance and harmony. The marble used for the construction is highly prized, and its smooth, reflective surface contributes to the building’s ethereal appearance, particularly when it changes color depending on the time of day and the lighting — appearing soft pink in the morning, bright white at noon, and golden at sunset.
+                    
+                    The Taj Mahal’s structure is not only known for its symmetry but also for its intricate craftsmanship. The marble is adorned with **intricate carvings**, some of which feature delicate floral patterns, while others showcase **calligraphy** from the Quran.<details style="margin-left: 450px;"><summary id="btn">Read more!</summary> The **inlay work**, where precious stones like **jade**, **lapis lazuli**, **turquoise**, **coral**, and **diamonds** are set into the marble, creates a striking contrast and adds to the monument’s magnificence. These materials were imported from various parts of the world, including **Persia**, **Tibet**, and **Sri Lanka**, illustrating the Mughal Empire's global connections at the time.
+                    
+                    The Taj Mahal complex also includes a **mosque**, a **guest house**, and an extensive **garden**. The garden, designed in the Persian-style **charbagh** (a quadrilateral garden divided by walkways or water channels), is laid out symmetrically with **reflecting pools**, fountains, and pathways that create an idealized representation of the **Garden of Paradise** described in the Quran. This design reflects the Mughal aesthetic for merging architecture with nature and symbolism. The **reflecting pool** that stretches in front of the Taj Mahal mirrors the majestic monument, enhancing its visual splendor and the sense of tranquility that the site evokes.
+                    
+                    One of the most remarkable features of the Taj Mahal is the **tomb** at the center, where both Shah Jahan and Mumtaz Mahal were ultimately laid to rest. Mumtaz Mahal’s tomb is positioned directly beneath the dome, and it is surrounded by a **screen of marble latticework**, showcasing the stunning craftsmanship of Mughal artisans. Shah Jahan’s tomb, however, is placed beside hers, slightly offset, as a sign of his mourning and grief. The tombs are enclosed in a **decorative chamber** with marble walls inlaid with intricate floral patterns. The entire interior of the Taj Mahal is a marvel of decoration, showcasing fine artistry in the use of marble, semi-precious stones, and calligraphy.
+                    
+                    The Taj Mahal also represents the **height of Mughal architectural achievements**. It was designed by a team of architects, engineers, and artisans, with the main architect, **Ustad Ahmad Lahauri**, overseeing the project. It is said that Shah Jahan aimed to create a building so beautiful that it would leave an indelible mark on history. The sheer scale of the Taj Mahal and the engineering required to complete it — including the transportation of marble from distant quarries in **Rajasthan**, the labor of thousands of artisans, and the precision in the layout — makes it one of the most ambitious construction projects in the world.
+                    
+                    Beyond its beauty and artistic merit, the Taj Mahal holds deep symbolic and historical significance. It is a symbol of the **Mughal Empire's power and opulence**, representing the wealth and cultural achievements of the period. It also embodies the **impermanence of life**, as the tomb reflects the enduring nature of love, yet is placed within a tomb — a reminder of the inevitability of death. The Taj Mahal’s design symbolizes the eternal love between Shah Jahan and Mumtaz Mahal, transcending the boundaries of time.
+                    
+                    Throughout the centuries, the Taj Mahal has become a global cultural icon. It was designated as a **UNESCO World Heritage Site** in 1983 due to its exceptional beauty and historical significance. Its influence extends far beyond architecture, inspiring art, literature, and countless admirers worldwide. It also continues to be a center of historical research, attracting scholars interested in Mughal history and architecture.
+                    
+                    Despite the passage of time, the Taj Mahal has faced several threats, including **pollution** and **tourism pressure**, which have caused some discoloration of the marble. However, extensive conservation efforts are underway to protect the monument, and a variety of measures, such as controlling air pollution around the site and restricting the use of certain materials for cleaning, are in place to preserve its beauty.
+                    
+                    As one of the **New Seven Wonders of the World**, the Taj Mahal continues to draw millions of visitors each year, captivating people with its grandeur and the emotional story behind its creation. It remains a symbol of **love**, **art**, and **human achievement**, transcending time and culture, and holds a special place as one of the greatest masterpieces ever created.</details></p>
+            </div>
+        </div>
+    </section>
+    <section class="home" id="feedback">
+        <div class="video">
+        <video autoplay loop muted plays-inline>
+            <source src="The 7 Wonders of the World 4K.mp4" type="video/mp4">
+        </video>
+        </div>
+        <div class="content">
+            <h1>Feedback</h1>
+            <div class="form-container">
+                <form action="">
+                    <h3>Is this site helpful for you?</h3>
+                    <label for="name">Your Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" placeholder="Enter your e-mail" required><br><br>
+                    <textarea name="Feedback" id="" placeholder="Comments"></textarea>
+                </form>
+            </div>
+        </div>
+    </section> -->
+    <footer>
+        <section id="footer">
+            <img src="WorldWondersGuide Logo.png" alt="" width="25%" style="margin-left: 7vh;">
+            <div style="width: 32%; margin-left: 7vh;">
+                <h2 style="font-size: 25px;">About Us</h2>
+                    <p style="font-size: 3vh;">At world wonders guide, we are dedicated to preserving memories through beautifully crafted monuments and memorials. With over 2 years of experience, We understand that creating a monument is not just about ; it's about offering a lasting symbol of respect, love, and remembrance. </p>
+            </div>
+            <div style="width: 30%; margin-left: 3vh;">
+                <h2 style="font-size: 25px;">Contact Us</h2>
+                <p style="font-size: 3vh;">E-mail:WWG@gmail.com</p>
+                <p style="font-size: 3vh;">Phone:021-XXXXXXXX</p>  
+            </div>
+            <div>
+                <p>© All Rights Reserved</p>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
