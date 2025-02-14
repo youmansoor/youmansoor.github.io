@@ -140,7 +140,7 @@ header .fa-bars{
         height: 25%;
     }
 }
-@media (max-width:768px){
+@media (max-width:425px){
     #box{
         display: flex;
         flex-wrap: wrap;
