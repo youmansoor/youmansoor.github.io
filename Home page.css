@@ -247,115 +247,20 @@ figure{
     color: #fff;
 }
 #footer {
-    background-color: black;
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-} 
- /* @media (max-width: 768px) {
-    html {
-        font-size: 55%;
-    }
-
-    .heading {
-        font-size: 3rem;
-        padding-top: 5rem;
-    }
-
-    header {
-        flex-direction: row;
-        height: 80px;
-    }
-
-    header .logo {
-        font-size: 2.8rem;
-    }
-
-    header .navbar ul {
-        font-size: 2rem;
-    }
-
-    .slider {
-        height: 500px;
-    }
-
-    .slide h1 {
-        font-size: 2.5rem;
-    }
-
-    .feature .card-container .card {
-        width: 40%;
-    }
-
-    .feature .card-container .content .title {
-        font-size: 2.8rem;
-    }
-
-    .feature .card-container .content p {
-        font-size: 1.2rem;
-    }
-
-    .feature .card-container .content .btn {
-        font-size: 1.6rem;
-        width: 11rem;
-    }
-
-    #footer {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    html {
-        font-size: 60.5%;
-    }
-
-    .heading {
-        font-size: 3.5rem;
-        padding-top: 6rem;
-    }
-
-    header {
-        flex-direction: row;
-        height: 80px;
-    }
-
-    header .logo {
-        font-size: 3rem;
-    }
-
-    header .navbar ul {
-        font-size: 2rem;
-    }
-
-    .slider {
-        height: 700px;
-    }
-
-    .slide h1 {
-        font-size: 3rem;
-    }
-
-    .feature .card-container .card {
-        width: 30%;
-    }
-
-    .feature .card-container .content .title {
-        font-size: 3rem;
-    }
-
-    .feature .card-container .content p {
-        font-size: 1.3rem;
-    }
-
-    .feature .card-container .content .btn {
-        font-size: 1.7rem;
-        width: 12rem;
-    }
-
-    #footer {
-        height: 150px;
-        display: flex;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between; 
+  padding: 20px; 
+}
+@media (max-width:425px){
+    #footer{
+        font-size: 3vh;
+        display: list-item;
+        align-items: center;
+        text-align: center;
         justify-content: center;
     }
-
-
-} */
+}
