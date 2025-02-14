@@ -158,9 +158,13 @@ header .fa-bars{
 }
 @media (max-width:425px){
     .box {
-        width: 80%;
+        width: 90%;
         height: 100%;
         margin: 5px;
+    }
+    .img {
+        width: 40%;
+        height: 50%;
     }
     .h3{
         font-size: 4vh;
