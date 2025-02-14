@@ -141,7 +141,7 @@ header .fa-bars{
 }
 @media (max-width:768px){
     .box {
-        width: 80%;
+        width: 90%;
         height: 100%;
         margin: 5px;
     }
