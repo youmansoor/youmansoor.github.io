@@ -152,6 +152,19 @@ header .fa-bars{
         font-size: 2.5vh;
     }
 }
+@media (max-width:425px){
+    .box {
+        width: 80%;
+        height: 100%;
+        margin: 5px;
+    }
+    .h3{
+        font-size: 4vh;
+    }
+    .p{
+        font-size: 2vh;
+    }
+}
 #footer {
     background-color: black;
     color: #fff;
