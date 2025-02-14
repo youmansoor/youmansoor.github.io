@@ -132,11 +132,11 @@ header .fa-bars{
     #box{
         display: flex;
         flex-wrap: wrap;
-        margin: 2.3vh;
+        margin: 3vh;
     }
     #gallery{
         margin: 2.3vh;
-        width: 30%;
+        width: 45%;
         height: 25%;
     }
 }
