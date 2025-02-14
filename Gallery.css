@@ -140,6 +140,19 @@ header .fa-bars{
         height: 25%;
     }
 }
+@media (max-width:768px){
+    #box{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2.3vh;
+    }
+    #gallery{
+        margin: 5vh;
+        align-items: center;
+        width: 90%;
+        height: 25%;
+    }
+}
 #footer {
     background-color: black;
     color: #fff;
