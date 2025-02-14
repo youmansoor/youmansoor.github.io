@@ -90,6 +90,19 @@ header .fa-bars{
     cursor: pointer;
     display: none;
 }
+h2 {
+    font-size: 5vh;
+}
+@media (max-width:768px){
+    h2{
+        font-size: 4.5vh;
+    }
+}
+@media (max-width:425px){
+    h2{
+        font-size: 4vh;
+    }
+}
 #About{
     margin-top: 20px;
     text-align: center;
