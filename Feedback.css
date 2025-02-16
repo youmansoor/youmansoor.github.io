@@ -213,7 +213,7 @@ header .fa-bars{
     .content .form-container form{
         margin-top: 2vh;
         padding: 2vh;
-        width: 100%;
+        width: 100vh;
         border-radius: .5rem;
     }
     .content.form-container form h3{
