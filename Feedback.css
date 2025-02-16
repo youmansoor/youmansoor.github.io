@@ -114,7 +114,7 @@ header .fa-bars{
      margin-top: 30px; */
      position: relative;
      justify-content: center;
-     width: 36%;
+     width: 50%;
      background-color: rgb(0, 0, 0, 0.4);
      text-align: center;
  }
@@ -136,7 +136,7 @@ header .fa-bars{
  .home .form-container form{
      margin-top: 2rem;
      padding: 2rem;
-     width: 40rem;
+     width: 100%;
      /* box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .9); */
      border-radius: .5rem;
  }
@@ -191,13 +191,12 @@ header .fa-bars{
 }
 @media (max-width:768px){
     #box{
-        width: 85%;
+        width: 95%;
         /* margin: 0; */
         padding: 0;
     }
     .home #box .img{
         width: 50vh;
-        marin-left:-10vh
     }
     .home .content{
         position: relative;
@@ -214,7 +213,7 @@ header .fa-bars{
     .content .form-container form{
         margin-top: 2vh;
         padding: 2vh;
-        width: 100vh;
+        width: 100%;
         border-radius: .5rem;
     }
     .content.form-container form h3{
@@ -269,7 +268,7 @@ header .fa-bars{
         display: table-column;
     }
     .img{
-        width: 10%;
+        width: 45vh;
         margin-left: 9vh;
     }
     .home .content{
