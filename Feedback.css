@@ -31,7 +31,7 @@ html{
     letter-spacing: .2rem;
 }
 .heading span{
-    color: #0098a1;
+    color: #a58a32;
 }
 header{
     width: 100%;
@@ -58,7 +58,7 @@ header .logo span{
     color: #a58a32;
 }
 header .navbar ul{
-    font-size: 35px;
+    font-size: 30px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -68,7 +68,7 @@ header .navbar ul{
     padding: 0;
 }
 header .navbar ul li{
-    margin: 8px;
+    margin: 6px;
 }
 header .navbar ul li a{
     font-size: 2rem;
@@ -79,7 +79,7 @@ header .navbar ul li .active{
     color: #a58a32;
 }
 header .navbar ul li a:hover{
-    padding: 10px;
+    padding: 2vh;
     color: #000;
     background-color: #fff;
     opacity: 1;
@@ -94,10 +94,11 @@ header .fa-bars{
     width: 100%;
     min-height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     position: relative;
-    padding: 2rem 10rem;
+    /* padding: 2rem 10rem; */
  }
  .home .video video{
      position: absolute;
@@ -113,7 +114,7 @@ header .fa-bars{
      margin-top: 30px; */
      position: relative;
      justify-content: center;
-     width: 42%;
+     width: 36%;
      background-color: rgb(0, 0, 0, 0.4);
      text-align: center;
  }
@@ -359,7 +360,9 @@ header .fa-bars{
     color: #fff;
     display: flex;
     flex-wrap: wrap;
-} 
+    justify-content: space-between; 
+    padding: 20px; 
+  }
 #about {
     margin: 0px;
     padding: 15px;
