@@ -269,13 +269,13 @@ header .fa-bars{
         display: table-column;
     }
     .img{
-        width: 40%;
+        width: 30%;
         margin-left: 9vh;
     }
     .home .content{
         position: relative;
         justify-content: center;
-        width: 45%;
+        width: 50%;
         background-color: rgb(0, 0, 0, 0.4);
         text-align: center;
         margin-left: 4vh;
