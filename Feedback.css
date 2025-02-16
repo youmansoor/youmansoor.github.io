@@ -196,13 +196,13 @@ header .fa-bars{
         padding: 0;
     }
     .img{
-        width: 80%;
+        width: 42.5%;
         /* margin-top: 10vh; */
     }
     .home .content{
         position: relative;
         justify-content: center;
-        width: 50%;
+        width: 42.5%;
         background-color: rgb(0, 0, 0, 0.4);
         text-align: center;
     }
@@ -214,7 +214,7 @@ header .fa-bars{
     .content .form-container form{
         margin-top: 2vh;
         padding: 2vh;
-        width: 49vh;
+        width: 100%;
         border-radius: .5rem;
     }
     .content.form-container form h3{
@@ -269,13 +269,13 @@ header .fa-bars{
         display: table-column;
     }
     .img{
-        width: 70%;
+        width: 45%;
         margin-left: 9vh;
     }
     .home .content{
         position: relative;
         justify-content: center;
-        width: 85%;
+        width: 45%;
         background-color: rgb(0, 0, 0, 0.4);
         text-align: center;
         margin-left: 4vh;
@@ -288,7 +288,7 @@ header .fa-bars{
     .content .form-container form{
         margin-top: 2vh;
         padding: 2vh;
-        width: 62vh;
+        width: 100%;
         border-radius: .5rem;
     }
     .content.form-container form h3{
