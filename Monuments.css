@@ -101,12 +101,11 @@ header .fa-bars{
     justify-content: center;
 }
 .box {
-    background-color: #ece7e7;
     width: 80%;
     height: 40%;
     margin: 5vh;
     padding: 4vh;
-    border-radius: 20%;
+    border: 1px solid black;
 }
 .img {
     width: 30%;
