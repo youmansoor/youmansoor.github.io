@@ -101,19 +101,17 @@ header .fa-bars{
     justify-content: center;
 }
 .box {
-    background-color: #fff;
-    display: flex;
+    background-color: #ece7e7;
     width: 80%;
     height: 40%;
-    /* height: auto; */
-    margin: 5px;
-}
-#bord {
-    border: 3px solid black;
+    margin: 5vh;
+    padding: 4vh;
+    border-radius: 20%;
 }
 .img {
     width: 30%;
     height: 40%;
+    float: left;
 }
 .h3 {
     /* background-color: #000; */
