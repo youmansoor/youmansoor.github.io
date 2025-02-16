@@ -195,14 +195,13 @@ header .fa-bars{
         /* margin: 0; */
         padding: 0;
     }
-    .img{
-        width: 50%;
-        /* margin-top: 10vh; */
+    .home #box .img{
+        width: 50vh;
     }
     .home .content{
         position: relative;
         justify-content: center;
-        width: 50%;
+        width: 50vh;
         background-color: rgb(0, 0, 0, 0.4);
         text-align: center;
     }
