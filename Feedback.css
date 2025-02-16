@@ -197,6 +197,7 @@ header .fa-bars{
     }
     .home #box .img{
         width: 50vh;
+        marin-left:-10vh
     }
     .home .content{
         position: relative;
