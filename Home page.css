@@ -6,6 +6,26 @@ body {
     text-decoration: none;
     text-transform: capitalize;
 }
+.lock{
+    justify-self: center;
+    width: 30%;
+    height: 50vh;
+    background-color: aqua;
+    text-align: center;
+    margin-top: 100px;
+}
+#name{
+    padding: 10px;
+    margin: 10px;
+}
+#password{
+    padding: 10px;
+    margin: 10px;
+}
+#btn{
+    padding: 10px;
+    margin: 10px;
+}
 ::-webkit-scrollbar {
     width: 15px;
 }
