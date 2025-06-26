@@ -108,19 +108,6 @@ header .fa-bars{
   cursor: pointer;
 }
 
-/* Reset and style nav list */
-.nav-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.nav-links ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 0.5rem 1rem;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
