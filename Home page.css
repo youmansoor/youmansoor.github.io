@@ -99,29 +99,33 @@ header .fa-bars{
     cursor: pointer;
     display: none;
 }
-/* Hide hamburger by default */
-.hamburger {
+.toggle-button {
   display: none;
-  font-size: 1.8em;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
   cursor: pointer;
 }
 
-/* Mobile styles */
+/* Responsive */
 @media (max-width: 768px) {
-  .hamburger {
+  .toggle-button {
     display: block;
   }
-  nav ul {
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 40px;
-    background: black;
-    padding: 20px;
-    border-radius: 10px;
+
+  .nav-links {
     display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem;
   }
-  nav ul.active {
+
+  .nav-links.active {
     display: flex;
   }
 }
