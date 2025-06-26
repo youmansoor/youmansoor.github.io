@@ -6,22 +6,11 @@ body {
     text-decoration: none;
     text-transform: capitalize;
 }
-.lock{
-    justify-self: center;
-    width: 30%;
-    height: 50vh;
-    background-color: aqua;
-    text-align: center;
-    margin-top: 100px;
-}
 #name{
     padding: 10px;
     margin: 10px;
 }
-#password{
-    padding: 10px;
-    margin: 10px;
-}
+
 #btn{
     padding: 10px;
     margin: 10px;
@@ -109,6 +98,32 @@ header .fa-bars{
     color: #0098a1;
     cursor: pointer;
     display: none;
+}
+/* Hide hamburger by default */
+.hamburger {
+  display: none;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    background: orange;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+  }
+  nav ul.active {
+    display: flex;
+  }
 }
 .slider{
     margin-top: -100px;
