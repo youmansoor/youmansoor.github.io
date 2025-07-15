@@ -10,17 +10,26 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo"><img src="WorldWondersGuide Logo.png" alt="" width="80px">WorldWondersGuide<span>.</span></a>
-        <nav class="navbar">
-        <ul>
-            <li><a data-scroll="home" href="index.html" class="active">Home</a></li>
-            <li><a data-scroll="about" href="About Us.html">About</a></li>
-            <li><a data-scroll="monuments" href="Monuments.html">Monuments</a></li>
-            <li><a data-scroll="gallery" href="Gallery.html">Gallery</a></li>
-            <li><a data-scroll="Feedback" href="Feedback.html">Feedback</a></li>
-        </ul>
-        </nav>
-    </header>
+  <a href="#" class="logo">
+    <img src="WorldWondersGuide Logo.png" alt="" width="80px">
+    WorldWondersGuide<span>.</span>
+  </a>
+
+  <button class="toggle-button" id="menu-toggle">☰</button>
+
+  <nav class="navbar">
+    <div class="nav-links" id="nav-links">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="About Us.html">About</a></li>
+        <li><a href="Monuments.html">Monuments</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="#footer">Contact Us</a></li>
+        <li><a href="Feedback.html">Feedback</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
     <section id="About">
         <h1 style="font-size: 50px;"><span class="span">A</span>bout <span class="span">U</span>s</h1>
         <hr style="width: 40%; margin-left: 0%;margin-top: 25px; height: 5px; background-color: #a58a32;">
@@ -32,22 +41,35 @@
                 We feature a wide range of monuments, from ancient marvels like the Great Wall of China and the Pyramids of Egypt to modern masterpieces such as the Sydney Opera House and the Burj Khalifa. Our goal is to celebrate the rich diversity of architecture, history, and culture that these world wonders represent.
                 Whether you are planning your next adventure, studying the past, or simply appreciating the beauty of our planet’s incredible heritage, WorldWondersGuide is here to inspire and inform you. Join us as we journey through time and across the globe to uncover the stories behind the world's most breathtaking monuments.</p>
         </div>
+    </section>
+    <script src="script.js"></script>
     <footer>
-        <section id="footer">
-            <img src="WorldWondersGuide Logo.png" alt="" width="25%" style="margin-left: 7vh;">
-            <div style="width: 32%; margin-left: 7vh;">
-                <h2 style="font-size: 25px;">About Us</h2>
-                    <p style="font-size: 3vh;">At world wonders guide, we are dedicated to preserving memories through beautifully crafted monuments and memorials. With over 2 years of experience, We understand that creating a monument is not just about ; it's about offering a lasting symbol of respect, love, and remembrance. </p>
-            </div>
-            <div style="width: 30%; margin-left: 3vh;">
-                <h2 style="font-size: 25px;">Contact Us</h2>
-                <p style="font-size: 3vh;">E-mail:WWG@gmail.com</p>
-                <p style="font-size: 3vh;">Phone:021-XXXXXXXX</p>  
-            </div>
-            <div>
-                <p>© All Rights Reserved</p>
-            </div>
-        </section>
-    </footer>
+  <section id="footer">
+    <div class="footer-logo">
+      <img src="WorldWondersGuide Logo.png" alt="World Wonders Guide Logo" />
+    </div>
+
+    <div class="footer-about">
+      <h2>About Us</h2>
+      <p>
+        At World Wonders Guide, we are dedicated to preserving memories through beautifully crafted
+        monuments and memorials. With over 2 years of experience, we understand that creating a
+        monument is not just about design; it's about offering a lasting symbol of respect, love,
+        and remembrance.
+      </p>
+    </div>
+
+    <div class="footer-contact">
+      <h2>Contact Us</h2>
+      <p>Email: WWG@gmail.com</p>
+      <p>Phone: 021-XXXXXXXX</p>
+    </div>
+
+    <div class="footer-copy">
+      <p>© All Rights Reserved</p>
+    </div>
+  </section>
+</footer>
+
 </body>
 </html>
